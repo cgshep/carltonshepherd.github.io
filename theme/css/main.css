@@ -9,7 +9,6 @@ Colors :
 
 /* Imports */
 
-@import url("fonts.css");
 @import url("tinytypo.css");
 @import url("pygment.css");
 
@@ -33,7 +32,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 300;
   font-size: 0.95em;
   line-height: 150%;

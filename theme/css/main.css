@@ -235,6 +235,10 @@ ol.archive li .tags
   line-height: 140%;
   font-size: 0.8em;
   margin: 0;
+ }
+
+img.pdf {
+    width: 25%;
 }
 
 

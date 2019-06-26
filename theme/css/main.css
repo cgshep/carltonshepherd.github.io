@@ -237,8 +237,8 @@ ol.archive li .tags
   margin: 0;
  }
 
-img.pdf {
-    width: 25%;
+p img.pdf {
+    height: 1em;
 }
 
 

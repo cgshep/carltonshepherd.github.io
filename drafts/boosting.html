@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">	
+<head>
+	<meta charset="utf-8"/>
+	<title>On Boosting in Machine Learning (Pt. 1): An Overview and&nbsp;AdaBoost - Carlton Shepherd</title>	
+	<meta name="author" content="Carlton Shepherd">
+	
+
+  <meta name="description" content="A Primer on Boosting in Machine Learning (Pt. 1): An Overview and Adaboost">
+
+
+
+	<link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js"></script>
+		
+
+
+    <link href="https://cs.gl/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carlton Shepherd Atom Feed" />
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header>
+	    <div class="feeds">
+	      <a href="../feeds/all.atom.xml" rel="alternate"><img src="../theme/images/icons/feed-32px.png" alt="atom feed"/></a>
+	    </div>
+
+	      <nav class="pages">
+			  <a href="../">Home</a>
+-			  <a href="../publications/">Publications</a>
+	      </nav>
+
+		<a href=".." class="title">Carlton Shepherd</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+		
+		<h1>On Boosting in Machine Learning (Pt. 1): An Overview and&nbsp;AdaBoost</h1>
+		
+<div class="metadata">
+  <time datetime="2019-10-10T08:46:00+01:00">Thu 10 October 2019</time>
+    <address class="vcard author">
+      by <a class="url fn" href="../author/carlton-shepherd.html">Carlton Shepherd</a>
+    </address>
+  in <a href="../category/python.html">Python</a>
+<p class="tags">tagged <a href="../tag/machine-learning.html">machine-learning</a></p></div>		
+		<p>In this two-part series, we&#8217;ll tour a family of machine learning algorithms known as <em>boosting</em>: what it is, how it works, its benefits, and its drawbacks. We&#8217;ll also look at some of the most widely-used algorithms, such as Adaptive Boosting (AdaBoost) and Gradient Boosting Machines (GBMs), including&nbsp;XGBoost. </p>
+<p>Boosting has been used successfully to place highly many Kaggle competitions, including the <a href="https://dbaumgartel.wordpress.com/2014/06/15/the-kaggle-higgs-challenge-beat-the-benchmarks-with-scikit-learn/">Higgs Boson</a>, <a href="https://www.kaggle.com/c/otto-group-product-classification-challenge/discussion/14335">product classification</a>, and <a href="https://www.kaggle.com/c/ieee-fraud-detection/discussion/111308#latest-645199"><span class="caps">IEEE</span>-<span class="caps">CIS</span> fraud detection</a> challenges. In general, it&#8217;s found great utility using structured tabular&nbsp;data.</p>
+<p>In this first post, an overview of boosting is given, alongside some of its high-level benefits and drawbacks; some fundamental knowledge of machine learning is assumed, such as decision trees, hypotheses, variance, and&nbsp;bias.</p>
+<h2>What is&nbsp;Boosting?</h2>
+<p>Boosting is a family of meta-algorithms that use an <em>ensemble</em> of <em>weak learners</em> to produce a <em>strong learner</em>. Let&#8217;s break each of these terms&nbsp;down.</p>
+<ul>
+<li>
+<p><em>Meta-algorithm</em>. Boosting isn&#8217;t an algorithm, like a support vector machine (<span class="caps">SVM</span>), that generates and outputs a single model, or hypothesis function, over the training data. Instead, it&#8217;s a high-level process by which the outputs of a series of hypotheses from individual classifiers are used in an <em>ensemble</em> to produce a single classification output. Other widely used meta-algorithms include bootstrapping aggregation (<em>bagging</em>) methods, e.g. <a href="https://en.wikipedia.org/wiki/Random_forest">Random Forests</a>, and <em>stacking</em>.</p>
+</li>
+<li>
+<p><em>Ensemble</em>. Ensemble learning builds on a long-standing observation&#8212;-dating back to the late 1980s [1]&#8212;-that the aggregation of <em>multiple</em> hypotheses generally outperforms that of a single hypothesis. How the outputs are aggregated differs between algorithms: boosting uses the training set to generate multiple classifiers, where the final output is produced from a <em>weighted sum</em> of these sub-classifiers. <!-- Comparatively, *bagging* uses a number of random sub-samples from the training set, with replacement, upon which individual classifiers are trained; the final decision is produced using an unweighted majority vote of these classifers' results (for categorical outputs). Lastly, *stacking* uses an additional learning algorithm, such as logistic regression,--></p>
+</li>
+<li>A <em>weak learner</em> is a classifier that performs only marginally better than random, with high bias but low variance, while a <em>strong learner</em> is one with high predictive power with low bias and&nbsp;variance.</li>
+</ul>
+<p>Boosting </p>
+<h2>AdaBoost</h2>
+<p>Adaptive boosting (AdaBoost) was developed by Freund and Schapire [2], <a href="https://mailman.srv.cs.cmu.edu/pipermail/connectionists/2003-October/021353.html">who were subsequently awarded the G&#8221;odel Prize in 2003</a>. AdaBoost uses an iterative process in which each training sample is first assigned a weak learner; while any classifier can be used, a common practice is to use <em>decision stumps</em>. These are single-level decision trees of the form $$ f(\textbf{x}) = sign(x_k &gt; c)&nbsp;$$.</p>
+<h3>Benefits</h3>
+<h3>Drawbacks</h3>
+<ul>
+<li></li>
+</ul>
+<h2>Refs.</h2>
+<ol>
+<li><a href="http://www.cs.ecu.edu/~dingq/CSCI6905/readings/BaggingBoosting.pdf"><span class="caps">J.R.</span> Quinlan, &#8220;Bagging, Boosting, and C4.5&#8221;, <span class="caps">AAAI</span>/<span class="caps">IAAI</span>, Vol. 1,&nbsp;1996.</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S002200009791504X">Y. Freund and <span class="caps">R. E.</span> Schapire, &#8220;A Decision-Theoretic Generalization of On-Line Learningand an Application to Boosting&#8221;, Journal of Computer and System Sciences, Vol. 55,&nbsp;1997.</a></li>
+</ol>	
+
+	</article>
+
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li class="active"><a href="../category/python.html">Python</a></li>
+	            </ul>
+	          </nav>
+
+	            <aside>
+	            <h2>Social</h2>
+			      <ul class="social">
+				    <li><a href="https://twitter.com/carltonshep">twitter</a><i></i></li>
+			      </ul>
+			    </aside>
+
+	            <aside>
+	              <h2>Blogroll</h2>
+	              <ul>
+	                  <li><a href="http://getpelican.com/">Pelican</a></li>
+	                  <li><a href="http://python.org/">Python.org</a></li>
+	                  <li><a href="https://www.scottaaronson.com/blog/">Shtetl-Optimized</a></li>
+	                  <li><a href="https://www.benthamsgaze.org/">Bentham's Gaze</a></li>
+	              </ul>
+	            </aside>
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  &#169; 2019 Carlton Shepherd - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme based on <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+</body>
+</html>

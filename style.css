@@ -1,0 +1,38 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1em;
+    line-height: 1.8;
+    width: 60%;
+    max-width: 960px;
+    margin: 0px 20% 40px 20%;
+    background: linear-gradient(0deg, #EFEFEF, #FFFFFF) repeat scroll 0% 0% transparent;
+}
+
+a {
+    color: #2A6EA6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #000;
+    clear: both;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.pdf {
+    width: 1.9em;
+    vertical-align: middle;
+}
+
+li {
+    padding: 0.1em
+}
+
+.paper-note {
+    font: small-caps 'Libre Baskerville', serif;
+}

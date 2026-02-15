@@ -1,27 +1,28 @@
 body {
     font-family: 'Libre Baskerville', serif;
-    line-height: 1.8;
+    line-height: 1.75;
     margin: 0;
-    padding: 0 1.25rem;
-    color: #111;
-    background: linear-gradient(0deg, #efefef, #ffffff) repeat scroll 0 0 transparent;
+    color: #1a1a1a;
+    background: #f4f6f8;
 }
 
 #container {
-    max-width: 980px;
+    max-width: 960px;
     margin: 0 auto;
+    padding: 2.5rem 1.25rem 3rem;
 }
 
 section {
-    margin-bottom: 2rem;
-}
-
-ul {
-    padding-left: 1.25rem;
+    background: #ffffff;
+    border: 1px solid #e7ebef;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    padding: 1.4rem 1.6rem;
+    box-shadow: 0 6px 20px rgba(24, 39, 75, 0.04);
 }
 
 a {
-    color: #2A6EA6;
+    color: #1f5f9a;
     text-decoration: none;
 }
 
@@ -30,22 +31,46 @@ a:hover {
 }
 
 h1 {
-    color: #000;
-    clear: both;
-    padding-top: 30px;
     margin: 0;
+    padding-top: 0.2rem;
+    color: #111;
+}
+
+h2 {
+    margin: 0 0 0.85rem;
+    color: #111;
+    font-size: 1.35rem;
+}
+
+p {
+    margin: 0 0 0.85rem;
+}
+
+ul {
+    margin: 0.2rem 0 0;
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
 
 .profile-image {
     float: right;
-    padding: 1.5em;
-    height: 220px;
+    width: min(240px, 42vw);
+    height: auto;
+    margin: 0 0 1rem 1.25rem;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
 }
 
 .book-cover {
     float: left;
-    padding: 3em;
-    height: 300px;
+    width: min(250px, 45vw);
+    height: auto;
+    margin: 0 1.5rem 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
 }
 
 .pdf {
@@ -53,22 +78,24 @@ h1 {
     vertical-align: middle;
 }
 
-li {
-    padding: 0.1em;
-}
-
 .paper-note {
     font: small-caps 'Libre Baskerville', serif;
 }
 
 @media (max-width: 900px) {
+    #container {
+        padding-top: 1.5rem;
+    }
+
+    section {
+        padding: 1.15rem 1.1rem;
+    }
+
     .profile-image,
     .book-cover {
         float: none;
         display: block;
-        margin: 0 auto;
-        padding: 1em 0;
-        max-width: 100%;
-        height: auto;
+        width: min(280px, 100%);
+        margin: 0 auto 1rem;
     }
 }

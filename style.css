@@ -12,6 +12,14 @@ body {
     margin: 0 auto;
 }
 
+section {
+    margin-bottom: 2rem;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
 a {
     color: #2A6EA6;
     text-decoration: none;

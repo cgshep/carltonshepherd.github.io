@@ -1,8 +1,15 @@
 body {
     font-family: 'Libre Baskerville', serif;
     line-height: 1.8;
-    margin: 0 15vw 0 15vw;
-    background: linear-gradient(0deg, #EFEFEF, #FFFFFF) repeat scroll 0% 0% transparent;
+    margin: 0;
+    padding: 0 1.25rem;
+    color: #111;
+    background: linear-gradient(0deg, #efefef, #ffffff) repeat scroll 0 0 transparent;
+}
+
+#container {
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 a {
@@ -21,15 +28,39 @@ h1 {
     margin: 0;
 }
 
+.profile-image {
+    float: right;
+    padding: 1.5em;
+    height: 220px;
+}
+
+.book-cover {
+    float: left;
+    padding: 3em;
+    height: 300px;
+}
+
 .pdf {
     width: 1.9em;
     vertical-align: middle;
 }
 
 li {
-    padding: 0.1em
+    padding: 0.1em;
 }
 
 .paper-note {
     font: small-caps 'Libre Baskerville', serif;
+}
+
+@media (max-width: 900px) {
+    .profile-image,
+    .book-cover {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding: 1em 0;
+        max-width: 100%;
+        height: auto;
+    }
 }

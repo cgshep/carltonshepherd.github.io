@@ -1,5 +1,8 @@
 /* ── Reset ──────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
 
 /* ── Design tokens ──────────────────────── */
 :root {
@@ -281,6 +284,10 @@ main {
 }
 .news-item:last-child { border-bottom: none; padding-bottom: 0; }
 .news-badge {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
   font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -290,7 +297,6 @@ main {
   padding: 0.15rem 0.48rem;
   border-radius: 4px;
   margin-right: 0.3rem;
-  vertical-align: baseline;
 }
 
 /* ── Grants ─────────────────────────────── */

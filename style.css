@@ -284,6 +284,18 @@ a.pub-rank:hover {
   border-radius: 4px;
   white-space: nowrap;
 }
+.pub-cited {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: #ecfeff;
+  color: #0e7490;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+a.pub-cited { text-decoration: none; }
+a.pub-cited:hover { background: #a5f3fc; text-decoration: none; }
 
 /* ── Book section ───────────────────────── */
 .book-layout {

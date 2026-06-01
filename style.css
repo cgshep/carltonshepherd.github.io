@@ -237,32 +237,34 @@ main {
 .pdf-link:hover { background: var(--accent); color: var(--white); text-decoration: none; }
 
 /* ── Publication type / quality tags ─── */
+.pub-tags {
+  margin-top: 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+.pub-tags .pdf-link { margin-left: 0; }
 .pub-type {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   background: #f1f5f9;
   color: #475569;
-  padding: 0.15rem 0.45rem;
+  padding: 0.18rem 0.5rem;
   border-radius: 4px;
-  margin-left: 0.3rem;
   white-space: nowrap;
-  display: inline-block;
-  vertical-align: middle;
 }
 .pub-rank {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   background: #ecfdf5;
   color: #065f46;
-  padding: 0.15rem 0.45rem;
+  padding: 0.18rem 0.5rem;
   border-radius: 4px;
-  margin-left: 0.25rem;
   white-space: nowrap;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 /* ── Book section ───────────────────────── */

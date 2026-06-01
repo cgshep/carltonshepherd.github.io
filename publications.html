@@ -30,20 +30,46 @@
     </div>
 
     <section class="card">
+      <h2>Book</h2>
+      <div class="book-layout">
+        <a href="https://link.springer.com/book/10.1007/978-3-031-55561-9" target="_blank" rel="noopener noreferrer">
+          <img class="book-cover" src="./images/tee_book.jpg" alt="Trusted Execution Environments — Book Cover">
+        </a>
+        <div>
+          <p>
+            C. Shepherd, K. Markantonakis,
+            <em>Trusted Execution Environments</em>,
+            Springer Nature, 2024.
+          </p>
+          <p style="color:var(--muted);font-size:0.92rem;">A comprehensive treatment of the design, security properties, and deployment of trusted execution environments across modern hardware platforms, covering Arm TrustZone, AMD SEV, Intel SGX and TDX, the Trusted Platform Module, and secure elements.</p>
+          <ul class="book-links">
+            <li><a href="https://link.springer.com/book/10.1007/978-3-031-55561-9" target="_blank" rel="noopener noreferrer">Springer</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
 
       <h3 class="pub-category">Side-channel and Fault Injection Attacks</h3>
       <ul class="pub-list">
+        <li>
+          C. Shepherd, E. A. J. Hurley,
+          <em>Entropy Collapse in Mobile Sensors: The Hidden Risks of Sensor-Based Security</em>,
+          Journal of Information Security and Applications, Elsevier, 2025.
+          <a class="pdf-link" href="./papers/entropy_collapse_mobile_sensors.pdf">PDF</a>
+        </li>
+        <li>
+          C. Shepherd, J. Kalbantner, B. Semal, K. Markantonakis,
+          <em>A Side-channel Analysis of Sensor Multiplexing for Covert Channels and Application Fingerprinting on Mobile Devices</em>,
+          IEEE Transactions on Dependable and Secure Computing, 2023.
+          <a class="pdf-link" href="./papers/shepherd_side_channel_sensor_multiplexing.pdf">PDF</a>
+        </li>
         <li>
           C. Shepherd, B. Semal, K. Markantonakis,
           <em>Investigating Black-box Function Recognition Using Hardware Performance Counters</em>,
           IEEE Transactions on Computers, 2022.
           <a class="pdf-link" href="./papers/Shepherd_Investigating_Black-box_Function_Recognition_HPCs.pdf">PDF</a>
-        </li>
-        <li>
-          C. Shepherd, B. Semal, J. Kalbantner, K. Markantonakis,
-          <em>A Side-channel Analysis of Sensor Multiplexing for Covert Channels and Application Fingerprinting on Mobile Devices</em>,
-          IEEE Transactions on Dependable and Secure Computing, 2023.
-          <a class="pdf-link" href="./papers/shepherd_side_channel_sensor_multiplexing.pdf">PDF</a>
         </li>
         <li>
           C. Shepherd, K. Markantonakis, N. van Heijningen, D. Aboulkassimi, C. Gaine, T. Heckmann, D. Naccache,
@@ -56,16 +82,16 @@
       <h3 class="pub-category">Trusted Execution Environments and Attestation</h3>
       <ul class="pub-list">
         <li>
-          C. Shepherd, K. Markontonakis, G-A. Jaloyan,
+          Z. Sha, C. Shepherd, A. Rafi, K. Markantonakis,
+          <em>Control-flow Attestation: Concepts, Solutions, and Open Challenges</em>,
+          Computers &amp; Security, Elsevier, 2025.
+          <a class="pdf-link" href="./papers/control_flow_attestation.pdf">PDF</a>
+        </li>
+        <li>
+          C. Shepherd, K. Markantonakis, G-A. Jaloyan,
           <em>LIRA-V: Lightweight Remote Attestation for Constrained RISC-V Devices</em>,
           IEEE Workshop on the Internet of Safe Things (SafeThings), in conjunction with IEEE S&amp;P, 2021.
           <a class="pdf-link" href="./papers/CS_Lightweight_Remote_Attestation_for_RISC_V.pdf">PDF</a>
-        </li>
-        <li>
-          C. Shepherd,
-          <em>Techniques for Establishing Trust in Remote Sensing Devices Using Trusted Execution Environments</em>,
-          Ph.D. Thesis, Royal Holloway, University of London, 2019.
-          <a class="pdf-link" href="./papers/2019shepherdcphd_final.pdf">PDF</a>
         </li>
         <li>
           C. Shepherd, R. N. Akram, K. Markantonakis,
@@ -99,8 +125,14 @@
         </li>
       </ul>
 
-      <h3 class="pub-category">Mobile and Internet of Things Security</h3>
+      <h3 class="pub-category">Proximity Detection and NFC Security</h3>
       <ul class="pub-list">
+        <li>
+          K. Markantonakis, J. A. Meister, I. Gurulian, C. Shepherd, R. N. Akram, E. Frank, K. Mayes,
+          <em>Using Ambient Sensors for Proximity and Relay Attack Detection in NFC Transactions: A Reproducibility Study</em>,
+          IEEE Access, 2024.
+          <a class="pdf-link" href="./papers/ambient_sensors_nfc_reproducibility.pdf">PDF</a>
+        </li>
         <li>
           I. Gurulian, C. Shepherd, K. Markantonakis, E. Frank, R. N. Akram, K. Mayes,
           <em>On the Effectiveness of Ambient Sensing for Detecting NFC Relay Attacks</em>,
@@ -117,20 +149,42 @@
         <li>
           C. Shepherd, I. Gurulian, E. Frank, K. Markantonakis, R. N. Akram, K. Mayes, E. Panaousis,
           <em>The Applicability of Ambient Sensors as Proximity Evidence for NFC Transactions</em>,
-          Mobile Security Technologies, IEEE Security &amp; Privacy Workshops, IEEE, 2017.
+          Mobile Security Technologies (MoST), IEEE Security &amp; Privacy Workshops, IEEE, 2017.
           <a class="pdf-link" href="./papers/applicability_ambient_sensing_proximity_detection.pdf">PDF</a>
         </li>
         <li>
-          P. Mainali and C. Shepherd,
-          <em>Privacy-Enhancing Fall Detection from Remote Sensor Data Using Multi-Party Computation</em>,
-          14th Int'l Conference on Availability, Reliability and Security (ARES '19), ACM, 2019.
-          <a class="pdf-link" href="./papers/fall_detection_mpc.pdf">PDF</a>
+          G. Haken, K. Markantonakis, I. Gurulian, C. Shepherd, R. N. Akram,
+          <em>Evaluation of Apple iDevice Sensors as a Potential Relay Attack Countermeasure for Apple Pay</em>,
+          3rd ACM Workshop on Cyber-Physical System Security (CPS-SPC '17), ACM, 2017.
+        </li>
+      </ul>
+
+      <h3 class="pub-category">Mobile and Internet of Things Security</h3>
+      <ul class="pub-list">
+        <li>
+          Y. Shen, C. Shepherd, C. M. Ahmed, S. Shen, S. Yu,
+          <em>Malware Patching Strategies in Edge Intelligence IoT Systems: A Differential Games Approach with Spiking Neural Networks</em>,
+          IEEE Transactions on Dependable and Secure Computing, 2026.
         </li>
         <li>
-          P. Mainali, C. Shepherd, F. A. P. Petitcolas,
-          <em>Privacy-Enhancing Context Authentication from Location-Sensitive Data</em>,
-          14th Int'l Conference on Availability, Reliability and Security (ARES '19), ACM, 2019.
-          <a class="pdf-link" href="./papers/contextual_authentication.pdf">PDF</a>
+          Y. Shen, C. Shepherd, C. M. Ahmed, S. Shen, S. Yu,
+          <em>Integrating Deep Spiking Q-Network into Hypergame-Theoretic Deceptive Defence for Mitigating Malware Propagation in Edge Intelligence-Enabled IoT Systems</em>,
+          IEEE Transactions on Services Computing, 2025.
+        </li>
+        <li>
+          Y. Shen, C. Shepherd, C. M. Ahmed, S. Shen, S. Yu,
+          <em>Privacy Preservation Strategies for Malware-Infected Edge Intelligence Systems: A Bayesian Stochastic Game-Based Approach</em>,
+          IEEE Transactions on Mobile Computing, 2025.
+        </li>
+        <li>
+          C. Verdeyen, C. Shepherd, K. Markantonakis, R. N. Akram, R. Milroy,
+          <em>DECML: Distributed Edge Consensus Machine Learning Framework</em>,
+          IEEE Global Conference on Artificial Intelligence and Internet of Things (GCAIoT), 2024.
+        </li>
+        <li>
+          K. Markantonakis, G. Arfaoui, S. A. Abu Ghazalah, C. Shepherd, R. N. Akram,
+          <em>CO-TSM: A Flexible Model for Secure Embedded Device Ownership and Management</em>,
+          Smart Cities, MDPI, 2024.
         </li>
         <li>
           Y. Shen, C. Shepherd, C. M. Ahmed, S. Shen, X. Wu, W. Ke, S. Yu,
@@ -147,10 +201,70 @@
           <em>Comparative DQN-improved Algorithms for Stochastic Games-based Automated Edge Intelligence-enabled IoT Malware Spread-suppression Strategies</em>,
           IEEE Internet of Things Journal, 2024.
         </li>
+        <li>
+          P. Mainali, C. Shepherd,
+          <em>Privacy-Enhancing Fall Detection from Remote Sensor Data Using Multi-Party Computation</em>,
+          14th Int'l Conference on Availability, Reliability and Security (ARES '19), ACM, 2019.
+          <a class="pdf-link" href="./papers/fall_detection_mpc.pdf">PDF</a>
+        </li>
+        <li>
+          P. Mainali, C. Shepherd, F. A. P. Petitcolas,
+          <em>Privacy-Enhancing Context Authentication from Location-Sensitive Data</em>,
+          14th Int'l Conference on Availability, Reliability and Security (ARES '19), ACM, 2019.
+          <a class="pdf-link" href="./papers/contextual_authentication.pdf">PDF</a>
+        </li>
+        <li>
+          C. Shepherd, F. A. P. Petitcolas, R. N. Akram, K. Markantonakis,
+          <em>An Exploratory Analysis of the Security Risks of the Internet of Things in Finance</em>,
+          14th Int'l Conference on Trust, Security and Privacy in Digital Business (TrustBus '17), Springer, 2017.
+          <a class="pdf-link" href="./papers/risk_iot_finance.pdf">PDF</a>
+        </li>
+      </ul>
+
+      <h3 class="pub-category">Digital Rights Management</h3>
+      <ul class="pub-list">
+        <li>
+          A. Rafi, K. Markantonakis, H. Rafi, C. Shepherd, Z. Sha,
+          <em>W3C Encrypted Media Extensions in Practice: A Closer Look at Security and Privacy Risks</em>,
+          8th Int'l Conference on Signal Processing and Information Security (ICSPIS), 2025.
+        </li>
+        <li>
+          A. Rafi, C. Shepherd, K. Markantonakis,
+          <em>A First Look at Digital Rights Management Systems for Secure Mobile Content Delivery</em>,
+          22nd IEEE Int'l Conference on Trust, Security and Privacy in Computing and Communications (TrustCom '23), IEEE, 2023.
+          <a class="pdf-link" href="./papers/drm_secure_mobile_content_delivery.pdf">PDF</a>
+        </li>
+      </ul>
+
+      <h3 class="pub-category">Blockchain and Decentralised Systems</h3>
+      <ul class="pub-list">
+        <li>
+          Y. Cai, K. Markantonakis, C. Shepherd,
+          <em>Addressing Network Packet-based Cheats in Multiplayer Games: A Secret Sharing Approach</em>,
+          arXiv:2501.10881, 2025.
+          <a class="pdf-link" href="./papers/multiplayer_game_cheats_secret_sharing.pdf">PDF</a>
+        </li>
+        <li>
+          J. Kalbantner, K. Markantonakis, D. Hurley-Smith, C. Shepherd,
+          <em>ZKP Enabled Identity and Reputation Verification in P2P Marketplaces</em>,
+          IEEE Int'l Conference on Blockchain, 2024.
+        </li>
+        <li>
+          J. Kalbantner, K. Markantonakis, D. Hurley-Smith, C. Shepherd, B. Semal,
+          <em>A DLT-based Smart Contract Architecture for Atomic and Scalable Trading</em>,
+          arXiv:2105.02937, 2021.
+          <a class="pdf-link" href="./papers/dlt_smart_contract_atomic_trading.pdf">PDF</a>
+        </li>
       </ul>
 
       <h3 class="pub-category">Other Work</h3>
       <ul class="pub-list">
+        <li>
+          C. Shepherd,
+          <em>Generative AI Misuse Potential in Cyber Security Education: A Case Study of a UK Degree Programme</em>,
+          arXiv:2501.12883, 2025.
+          <a class="pdf-link" href="./papers/generative_ai_misuse_cybersecurity_education.pdf">PDF</a>
+        </li>
         <li>
           <span class="pub-badge">Best Paper Award</span>
           V. Vagal, K. Markantonakis, C. Shepherd,
@@ -159,13 +273,7 @@
           <a class="pdf-link" href="./papers/a_new_approach_uav_complex_dynamic_geofencing.pdf">PDF</a>
         </li>
         <li>
-          C. Shepherd, F. A. P. Petitcolas, R. N. Akram, K. Markantonakis,
-          <em>An Exploratory Analysis of the Security Risks of the Internet of Things in Finance</em>,
-          14th Int'l Conference on Trust, Security and Privacy in Digital Business (TrustBus '17), Springer, 2017.
-          <a class="pdf-link" href="./papers/risk_iot_finance.pdf">PDF</a>
-        </li>
-        <li>
-          R. Kirkham, C. Shepherd, T. Plotz,
+          R. Kirkham, C. Shepherd, T. Plötz,
           <em>BlobSnake: Gamification of Feature Extraction for 'Plug and Play' Human Activity Recognition</em>,
           British HCI Conference, ACM, 2015.
           <a class="pdf-link" href="./papers/blobsnake.pdf">PDF</a>
@@ -178,12 +286,22 @@
         </li>
       </ul>
 
+      <h3 class="pub-category">Thesis</h3>
+      <ul class="pub-list">
+        <li>
+          C. Shepherd,
+          <em>Techniques for Establishing Trust in Modern Constrained Sensing Platforms with Trusted Execution Environments</em>,
+          Ph.D. Thesis, Royal Holloway, University of London, 2019.
+          <a class="pdf-link" href="./papers/2019shepherdcphd_final.pdf">PDF</a>
+        </li>
+      </ul>
+
     </section>
 
   </main>
 
   <footer>
-    <p>Last updated: March 2026</p>
+    <p>Last updated: June 2026</p>
   </footer>
 
 </body>
